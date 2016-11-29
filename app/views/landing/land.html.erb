@@ -89,7 +89,7 @@
       </div>
   </div>
   <div class="row">
-    <div class="col-md-3 text-center animated fadeInLeft">
+    <div class="col-md-3 text-center wow fadeInLeft">
         <div>
             <i class="fa fa-mobile features-icon"></i>
             <i class="fa fa-tablet features-icon"></i>
@@ -110,11 +110,11 @@
             and dedicate your time to creating great assesment.</p>
         </div>
     </div>
-    <div class="col-md-6 text-center animated zoomIn">
+    <div class="col-md-6 text-center wow zoomIn">
         <img src="<%= image_path('landing/perspective.png') %>"
         alt="dashboard" class="img-responsive">
     </div>
-    <div class="col-md-3 text-center animated fadeInRight">
+    <div class="col-md-3 text-center wow fadeInRight">
         <div>
             <i class="fa fa-database features-icon"></i>
             <h2>Your database!</h2>
@@ -151,7 +151,7 @@
           </div>
       </div>
       <div class="row features-block">
-          <div class="col-lg-3 features-text animated fadeInLeft">
+          <div class="col-lg-3 features-text wow fadeInLeft">
               <i class="fa fa-desktop features-icon"></i>
               <i class="fa fa-laptop features-icon"></i><br>
               <small>Desktop/Laptop</small>
@@ -168,11 +168,11 @@
             <br>
             <br>
             <!-- zoomIn not working -->
-          <div class="col-lg-6 text-center animated zoomIn">
+          <div class="col-lg-6 text-center wow zoomIn">
               <img src="<%= image_path('landing/dashboard.png') %>"
               class="img-responsive center-block" alt="dashboard">
           </div>
-          <div class="col-lg-3 features-text text-right animated fadeInRight">
+          <div class="col-lg-3 features-text text-right wow fadeInRight">
             <i class="fa fa-mobile features-icon"></i>
             <i class="fa fa-tablet features-icon"></i>
             <small>Mobile devices</small>
@@ -197,7 +197,7 @@
           </div>
       </div>
       <div class="row">
-          <div class="col-lg-5 col-lg-offset-1 features-text animated fadeInLeft">
+          <div class="col-lg-5 col-lg-offset-1 features-text wow fadeInLeft">
               <small>DESIGN</small>
               <h2>A focus on assesments</h2>
               <i class="fa fa-book big-icon pull-right"></i>
@@ -207,7 +207,7 @@
                 design, deployment, and post-assesment data collection
                 and analysis.</p>
           </div>
-          <div class="col-lg-5 features-text animated fadeInRight">
+          <div class="col-lg-5 features-text wow fadeInRight">
               <small>INSTITUTIONS</small>
               <h2>Enabling institutions and educators</h2>
               <i class="fa fa-graduation-cap big-icon pull-right"></i>
@@ -218,7 +218,7 @@
           </div>
       </div>
       <div class="row">
-          <div class="col-lg-5 col-lg-offset-1 features-text animated fadeInLeft">
+          <div class="col-lg-5 col-lg-offset-1 features-text wow fadeInLeft">
               <small>DATA</small>
               <h2>Oshie is smart</h2>
               <i class="fa fa-pie-chart big-icon pull-right"></i>
@@ -229,7 +229,7 @@
                 interaction of the user with the application as well as
                 comprehensive post-assesment statistics.</p>
           </div>
-          <div class="col-lg-5 features-text animated fadeInRight">
+          <div class="col-lg-5 features-text wow fadeInRight">
               <small>NEXT STEPS</small>
               <h2>Find out how Oshie can help your institution deliver awesome
                 assesment and tests.</h2>
@@ -340,8 +340,7 @@ $(function() {
 
 });
 
-// Activate animated.js plugin for animation on scrol
-new animated().init();
+new WOW().init();
 
 </script>
 
