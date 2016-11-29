@@ -1,0 +1,348 @@
+<% provide(:title, "Home") %>
+<!-- navbar -->
+<div class="navbar-wrapper">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+              <%= link_to "Oshie", home_index_path,
+              class: "navbar-brand" %>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="page-scroll" href="#page-top">Home</a></li>
+          <li><a class="page-scroll" href="#whatisoshie">What is Oshie</a></li>
+          <li><a class="page-scroll" href="#app">App</a></li>
+          <li><a class="page-scroll" href="#learn">Learn More</a></li>
+            <li><%= link_to "Oshie Dashboard", '#'%></li>
+            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "Sign up", '#' %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div><!-- navbar -->
+
+<!-- carousel -->
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#inSlider" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <div class="container">
+            <div class="carousel-caption">
+              <h1>For Educators!<br/>
+                  Oshie is a powerful <br/>
+                  cognitive assesment app</h1>
+                <p><%= link_to "Learn more", '#',
+                class: "btn btn-lg btn-primary" %></p>
+            </div>
+            <!-- Need image here
+            <div class="carousel-image animated zoomIn">
+                <img src="<%= image_path('landing/laptop.png') %>" alt="laptop"/>
+            </div>
+            -->
+        </div>
+        <!-- Set background for slide in css -->
+        <div class="header-back one"></div>
+    </div>
+    <div class="item">
+        <div class="container">
+            <div class="carousel-caption blank">
+                <h1>For Students!<br/>
+                Unleash your learning potential</h1>
+                <p><%= link_to "Learn more", '#',
+                class: "btn btn-lg btn-primary" %></p>
+            </div>
+        </div>
+        <!-- Set background for slide in css -->
+        <div class="header-back two"></div>
+    </div>
+  </div>
+  <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- what is oshie -->
+<section id="whatisoshie" class="container features">
+  <div class="row">
+      <div class="col-lg-12 text-center">
+          <div class="primary-line"></div>
+          <h1>Oshie is a web app that empowers educators and students!<br/>
+            <span class="primary"> Design, deploy, and monitor tests and assesments.
+            </span> </h1>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 text-center animated fadeInLeft">
+        <div>
+            <i class="fa fa-mobile features-icon"></i>
+            <i class="fa fa-tablet features-icon"></i>
+            <i class="fa fa-desktop features-icon"></i>
+            <h2>From any device!</h2>
+            <p>Desing your own custom assessment and tests.
+            Oshie allows you to design, deploy, and monitor your assesments.
+            Create your own evaluations or collaborate with other educators
+            through our expanding database.</p>
+        </div>
+        <div class="m-t-lg">
+            <i class="fa fa-bar-chart features-icon"></i>
+            <i class="fa fa-line-chart features-icon"></i>
+            <h2>Oshie is smart!</h2>
+            <p>Use Oshie's powerful interface to gather crucial test related data.
+            Gather post assesment statistics and
+            skip the time consuming test design process,
+            and dedicate your time to creating great assesment.</p>
+        </div>
+    </div>
+    <div class="col-md-6 text-center animated zoomIn">
+        <img src="<%= image_path('landing/perspective.png') %>"
+        alt="dashboard" class="img-responsive">
+    </div>
+    <div class="col-md-3 text-center animated fadeInRight">
+        <div>
+            <i class="fa fa-database features-icon"></i>
+            <h2>Your database!</h2>
+            <p>Your information is always stored safely in your own private
+              database. Chose to collaborate with other users to unlock
+              Oshie's true potential.</p>
+        </div>
+        <div class="m-t-lg">
+            <i class="fa fa-cloud-upload features-icon"></i>
+            <h2>Access your tests anywhere at anytime!</h2>
+            <p>Access your data from any device. Send your assesments to users
+              and allows them to engage with the test under your set parameters.</p>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-lg-12 text-center">
+          <div class="primary-line"></div>
+          <h1>Start using Oshie today!</h1>
+          <%= link_to "Sign up for free", '#',
+          class: "btn btn-primary" %>
+      </div>
+  </div>
+</section> <!-- what is oshie -->
+
+<!-- app -->
+<section id="app" class="features gray-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <div class="primary-line"></div>
+              <h1>Oshie's Web Application</h1>
+              <p>Use Oshie from your favorite device!</p>
+          </div>
+      </div>
+      <div class="row features-block">
+          <div class="col-lg-3 features-text animated fadeInLeft">
+              <i class="fa fa-desktop features-icon"></i>
+              <i class="fa fa-laptop features-icon"></i><br>
+              <small>Desktop/Laptop</small>
+              <h2>Your Dashboard</h2>
+              <p>Sign up for Oshie and access your personal Dashboard.
+              Here you can use Oshie's tools to create your assessments and tests.
+              Use Oshie's intuitive interface to create great tests. Already have
+              your tests ready? No problem, upload them using Oshie's easy
+              upload tool. Sign up for free and discover how Oshie can help you
+              create great tests!</p>
+              <%= link_to "Sign up for free", '#',
+              class: "btn btn-primary" %>
+          </div>
+            <br>
+            <br>
+            <!-- zoomIn not working -->
+          <div class="col-lg-6 text-center animated zoomIn">
+              <img src="<%= image_path('landing/dashboard.png') %>"
+              class="img-responsive center-block" alt="dashboard">
+          </div>
+          <div class="col-lg-3 features-text text-right animated fadeInRight">
+            <i class="fa fa-mobile features-icon"></i>
+            <i class="fa fa-tablet features-icon"></i>
+            <small>Mobile devices</small>
+              <h2>Always connected</h2>
+              <p>Download Oshie's app for your favorite mobile device and acces
+              your Dashboard from anywhere you want. <br>
+              Easily create, deploy, can collect
+              your tests on the go.</p>
+              <%= link_to "Download the Oshie app", '#',
+              class: "btn btn-primary" %>
+          </div>
+      </div>
+  </div>
+  <!-- app features-->
+  <section class="features">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+              <div class="primary-line"></div>
+              <h1>Simplify, collaborate, and create.</h1>
+              <p>Streamline the teaching and learning process. </p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 features-text animated fadeInLeft">
+              <small>DESIGN</small>
+              <h2>A focus on assesments</h2>
+              <i class="fa fa-book big-icon pull-right"></i>
+              <p>Oshie focuses on allowing the users to fully enage with their
+                assesment both from the perspective of the designer and the
+                ultimate user. This removes any interferences associated with
+                design, deployment, and post-assesment data collection
+                and analysis.</p>
+          </div>
+          <div class="col-lg-5 features-text animated fadeInRight">
+              <small>INSTITUTIONS</small>
+              <h2>Enabling institutions and educators</h2>
+              <i class="fa fa-graduation-cap big-icon pull-right"></i>
+              <p>Oshie makes the process of creating, configuring, deploying,
+                and managing psot-test statistics as simple as possible.
+                This way institutions and educators can focus on building
+                great tests and interacting efficiently with their feedback.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 features-text animated fadeInLeft">
+              <small>DATA</small>
+              <h2>Oshie is smart</h2>
+              <i class="fa fa-pie-chart big-icon pull-right"></i>
+              <p>Post-assesment data analysis is a crucial step in designing
+                efficient and effective assesments. Oshie provides a rich and
+                extensive post-assesment data analysis package that allows
+                the user to investigate any information related to the
+                interaction of the user with the application as well as
+                comprehensive post-assesment statistics.</p>
+          </div>
+          <div class="col-lg-5 features-text animated fadeInRight">
+              <small>NEXT STEPS</small>
+              <h2>Find out how Oshie can help your institution deliver awesome
+                assesment and tests.</h2>
+              <i class="fa fa-users big-icon pull-right"></i>
+              <p>Want to see if Oshie is right for your institution?
+                <%= link_to "contact us", "#" %>.
+                Want to jump in and start creating great assesments?
+                You can <%= link_to "sign up", "#" %> for free.</p>
+          </div>
+      </div>
+  </div>
+  </section><!-- app features-->
+</section><!-- app -->
+
+<!-- learn more -->
+<section id="learn" class="container contact">
+  <div class="container">
+      <div class="row m-b-lg">
+          <div class="col-lg-12 text-center">
+              <div class="primary-line"></div>
+              <h1>Learn More</h1>
+              <p>Want to learn more about Oshie?</p>
+          </div>
+      </div>
+      <div class="row m-b-lg">
+          <div class="col-lg-12 text-center">
+              <p class="text-color">Want to learn more? Head over to
+              <%= link_to "Documentation", "#" %> for comprehensive guides on
+              how Oshie works and how to use it. <br>
+              Have more questions?</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12 text-center">
+            <%= link_to "Send us an email", '#',
+            class: "btn btn-primary" %>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
+              <p><strong>&copy; 2017 Oshie</strong><br/></p>
+              <ul class="list-inline">
+                  <li><%= link_to "Terms of Service", '#' %></li>
+                  <li><%= link_to "Privacy", policy_privacy_path %></li>
+                  <li><%= link_to "Cookies",
+                  policy_privacy_path(:anchor => "cookies")%></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section><!-- learn more -->
+
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+    $('body').addClass('landing-page');
+    $('body').attr('id', 'page-top');
+
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 80
+    });
+
+    // Page scrolling feature
+    $('a.page-scroll').bind('click', function(event) {
+        var link = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(link.attr('href')).offset().top - 50
+        }, 500);
+        event.preventDefault();
+        $("#navbar").collapse('hide');
+    });
+
+    var cbpanimatedHeader = (function() {
+        var docElem = document.documentElement,
+                header = document.querySelector( '.navbar-default' ),
+                didScroll = false,
+                changeHeaderOn = 200;
+        function init() {
+            window.addEventListener( 'scroll', function( event ) {
+                if( !didScroll ) {
+                    didScroll = true;
+                    setTimeout( scrollPage, 250 );
+                }
+            }, false );
+        }
+        function scrollPage() {
+            var sy = scrollY();
+            if ( sy >= changeHeaderOn ) {
+                $(header).addClass('navbar-scroll')
+            }
+            else {
+                $(header).removeClass('navbar-scroll')
+            }
+            didScroll = false;
+        }
+        function scrollY() {
+            return window.pageYOffset || docElem.scrollTop;
+        }
+        init();
+
+    })();
+
+});
+
+// Activate animated.js plugin for animation on scrol
+new animated().init();
+
+</script>
+
+<% end %>

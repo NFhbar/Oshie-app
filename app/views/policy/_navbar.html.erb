@@ -1,0 +1,34 @@
+<!-- navbar -->
+<div class="navbar-wrapper policy-nav">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#navbar"
+            aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+              <%= link_to "Oshie", '#',
+              class: "navbar-brand" %>
+
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "What is Oshie",
+          root_path(:anchor => "whatisoshie")%></li>
+          <li><%= link_to "App",
+          root_path(:anchor => "app")%></li>
+          <li><%= link_to "Learn More",
+          root_path(:anchor => "learn")%></li>
+            <li><%= link_to "Oshie Dashboard", '#'%></li>
+            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "Sign up", '#' %></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div><!-- navbar -->
