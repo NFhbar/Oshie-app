@@ -6,10 +6,6 @@
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
 
-    <!-- Include style per-controller - vendor plugins -->
-    <%= stylesheet_link_tag params[:controller] if
-    ::Rails.application.assets.find_asset("#{params[:controller]}.css") %>
-
 </head>
 <body>
 
@@ -37,10 +33,6 @@
 
     </div>
     <!-- End wrapper-->
-
-    <!-- Include javascript per-controller - vendor plugins -->
-    <%= javascript_include_tag params[:controller] if
-    ::Rails.application.assets.find_asset("#{params[:controller]}.js") %>
 
 </body>
 </html>

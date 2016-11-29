@@ -3,8 +3,7 @@
 <head>
     <%= render 'layouts/meta' %>
     <title><%= full_title(yield(:title)) %></title>
-    <!-- Include style per-controller - vendor plugins -->
-    <%= stylesheet_link_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.css") %>
+
     <%= render 'layouts/rails_default' %>
     <%= render 'layouts/shim' %>
 
@@ -16,10 +15,6 @@
     <%= render :partial => 'policy/sidebar' %>
     <%= yield %>
     <%= debug(params) if Rails.env.development? %>
-
-
-    <!-- Include javascript per-controller - vendor plugins -->
-    <%= javascript_include_tag params[:controller] if ::Rails.application.assets.find_asset("#{params[:controller]}.js") %>
 
     <!-- Include javascript per-view -->
     <!-- For demo purpose we include javascript in view but you can easily start SeedProject and organize it with Rails asset pipeline as you want -->
