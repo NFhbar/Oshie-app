@@ -2,4 +2,5 @@
 
 # TODO
 
-everything
+- everything
+- email in production section 11.4
