@@ -8,5 +8,8 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+  def setup
+    @base_title = "Oshie"
+  end
   # Add more helper methods to be used by all tests here...
 end
