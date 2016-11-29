@@ -12,7 +12,7 @@ class PolicyControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get acceptable" do
-    get policy_acceptable_url
+    get policy_aup_url
     assert_response :success
   end
 
