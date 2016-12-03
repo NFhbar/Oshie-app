@@ -9,6 +9,13 @@
 </head>
 <body class="gray-bg">
 
+    <!-- Devise Flash Messages -->
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>">
+        <%= value %>
+      </div>
+    <% end %>
+
     <!-- Main view  -->
     <%= yield %>
     <%= debug(params) if Rails.env.development? %>

@@ -21,9 +21,13 @@
           <li><a class="page-scroll" href="#whatisoshie">What is Oshie</a></li>
           <li><a class="page-scroll" href="#app">App</a></li>
           <li><a class="page-scroll" href="#learn">Learn More</a></li>
-            <li><%= link_to "Oshie Dashboard", '#'%></li>
-            <li><%= link_to "Log in", '#' %></li>
-            <li><%= link_to "Sign up", '#' %></li>
+          <% if user_signed_in? %>
+             <li><%= link_to "Oshie Dashboard", home_index_path%></li>
+             <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+           <% else %>
+             <li><%= link_to "Log in", new_user_session_path %></li>
+             <li><%= link_to "Sign up", new_user_registration_path %></li>
+           <% end %>
         </ul>
       </div>
     </div>

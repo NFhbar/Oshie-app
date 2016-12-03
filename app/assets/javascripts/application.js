@@ -9,6 +9,7 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
+// Incorporate TURBOLINKS at some point
 //
 //= require jquery
 //= require jquery_ujs
@@ -17,5 +18,4 @@
 //= require pace/pace.min.js
 //= require slimscroll/jquery.slimscroll.min.js
 //= require wow
-//= require turbolinks
 //= require_tree .
