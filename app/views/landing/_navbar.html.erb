@@ -12,7 +12,7 @@
                 <span class="icon-bar"></span>
             </button>
             <% if user_signed_in? %>
-              <%= link_to "Oshie", home_index_path,
+              <%= link_to "My Dashboard", home_index_path,
               class: "navbar-brand" %>
             <% else %>
               <%= link_to "Oshie", root_path,
@@ -26,7 +26,7 @@
           <li><a class="page-scroll" href="#app">App</a></li>
           <li><a class="page-scroll" href="#learn">Learn More</a></li>
           <% if user_signed_in? %>
-             <li><%= link_to "Oshie Dashboard", home_index_path%></li>
+             <li><%= link_to "My Dashboard", home_index_path%></li>
              <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
            <% else %>
              <li><%= link_to "Log in", new_user_session_path %></li>
