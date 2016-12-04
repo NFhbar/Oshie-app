@@ -29,17 +29,20 @@
   <!-- PASSWORD -->
   <div class="form-group" id="form-inputs">
     <%= f.password_field :password, autocomplete: "off",
-    class: 'form-control', placeholder: 'Password' %>
+    class: 'form-control', id: 'Password', placeholder: 'Password' %>
     <% if @validatable %>
       <span class="help-block"><%= @minimum_password_length %>
       characters minimum</span>
     <% end %>
+    <div class="progress">
+      <div id="StrengthProgressBar" class="progress-bar"></div>
+    </div>
   </div>
 
   <!-- PASSWORD CONFIRMATION -->
   <div class="form-group" id="form-inputs">
     <%= f.password_field :password_confirmation, autocomplete: "off",
-    class: 'form-control', placeholder: 'Password confirmation' %>
+    class: 'form-control estimate-password', placeholder: 'Password confirmation' %>
   </div>
 
   <!-- TERMS -->

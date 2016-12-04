@@ -11,12 +11,7 @@
     <!-- Wrapper-->
     <div id="wrapper">
 
-      <!-- Devise Flash Messages -->
-      <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>">
-          <%= value %>
-        </div>
-      <% end %>
+
 
       <!-- Navigation -->
       <%= render 'layouts/navigation' %>
@@ -27,6 +22,9 @@
           <!-- Page wrapper -->
           <%= render 'layouts/topnavbar' %>
 
+          <!-- Devise Flash Messages -->
+          <%= render 'layouts/messages' %>
+          
           <!-- Main view  -->
           <%= yield %>
 

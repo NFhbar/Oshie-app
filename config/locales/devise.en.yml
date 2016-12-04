@@ -60,3 +60,4 @@ en:
       not_saved:
         one: "1 error prohibited this %{resource} from being saved:"
         other: "Whoops! There are %{count} errors:"
+      weak_password: "is not strong enough. Consider adding a number, symbols or more letters to make it stronger."  

@@ -9,16 +9,11 @@
 </head>
 <body class="gray-bg">
 
-    <!-- Navbar -->
-    <%= render :partial => 'landing/navbar' %>
-
     <!-- Devise Flash Messages -->
-    <!-- For landing page, messages in land.html.erb -->
+    <%= render 'layouts/messages' %>
 
     <!-- Main view  -->
     <%= yield %>
-
-    <!-- debuggin box -->
     <%= debug(params) if Rails.env.development? %>
 
     <%= yield :javascript %>

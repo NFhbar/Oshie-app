@@ -66,6 +66,9 @@ GEM
       railties (>= 4.1.0, < 5.1)
       responders
       warden (~> 1.2.3)
+    devise_zxcvbn (2.1.2)
+      devise
+      zxcvbn-js (~> 4.2.0)
     erubis (2.7.0)
     execjs (2.7.0)
     faker (1.6.6)
@@ -210,6 +213,8 @@ GEM
     websocket-extensions (0.1.2)
     will_paginate (3.1.0)
     wow-rails (0.0.1)
+    zxcvbn-js (4.2.0.1)
+      execjs
 
 PLATFORMS
   ruby
@@ -221,6 +226,7 @@ DEPENDENCIES
   byebug (= 9.0.0)
   coffee-rails (= 4.2.1)
   devise
+  devise_zxcvbn
   faker (= 1.6.6)
   font-awesome-rails (~> 4.7)
   guard (= 2.13.0)

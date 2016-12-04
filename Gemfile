@@ -21,6 +21,9 @@ gem 'wow-rails'
 #authentication system for users
 gem 'devise'
 
+#measure password strength and reject weak passwords
+gem 'devise_zxcvbn'
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'

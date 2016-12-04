@@ -12,18 +12,13 @@ module Oshie
     # layouts for Devise on a controller basis
     config.to_prepare do
 
-        # User Registration (Always use empty layout)
-        Devise::RegistrationsController.layout proc{ |controller|
-        action_name == 'new' ? "empty"   : "application" }
-        # # action specific layout
-        # Devise::RegistrationsController.layout proc{ |controller|
-        # action_name == 'edit' ? "application"   : "application" }
-        #
-        #
-        Devise::ConfirmationsController.layout "empty"
-        Devise::SessionsController.layout "empty"
-        Devise::PasswordsController.layout "empty"
-        Devise::UnlocksController.layout "empty"
+      # same layout for all Devise views, except for when the user is editing its data
+      Devise::SessionsController.layout "devise"
+      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "devise" }
+      Devise::ConfirmationsController.layout "devise"
+      Devise::UnlocksController.layout "devise"
+      Devise::PasswordsController.layout "devise"
+
 
 
     end
