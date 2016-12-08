@@ -2,8 +2,9 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @mainTitle = "Welcome in Inspinia Rails Seed Project"
-    @mainDesc = "It is an application skeleton for a typical Ruby on Rails web app. You can use it to quickly bootstrap your webapp projects and dev/prod environment."
+    @mainTitle = "Welcome to Oshie"
+    @mainDesc = "This is your main Dashboard. From here you can create, deploy,
+    and monitor your assessments."
   end
 
   def minor
