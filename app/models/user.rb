@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :confirmable, :lockable, :zxcvbnable
 
 
+  has_many :tests
 end

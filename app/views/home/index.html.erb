@@ -1,14 +1,24 @@
-<div class="wrapper wrapper-content animated fadeInRight">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center m-t-lg">
-                <h1>
-                    <%= @mainTitle %>
-                </h1>
-                <small>
-                    <%= @mainDesc %>
-                </small>
-            </div>
-        </div>
+<% provide(:title, "My Dashboard") %>
+
+<div class="wrapper wrapper-content">
+
+<div class="row">
+
+  <!-- profile -->
+  <div class="col-md-4">
+      <div class="ibox float-e-margins">
+        <%= render :partial => 'profile' %>
+      </div>
+      <div class="ibox-content">
+        <%= render :partial => 'classes' %>
     </div>
+  </div><!-- col-md -->
+
+  <!-- profile -->
+  <div class="col-md-8">
+    <%= render :partial => 'calendar' %>
+  </div><!-- col-md -->
+
 </div>
+
+</div><!-- wrapper -->

@@ -20,4 +20,7 @@
 //= require zxcvbn/zxcvbn.js
 //= require strength-meter/zxcvbn-bootstrap-strength-meter.js
 //= require wow
+//= require moment
+//= require fullcalendar
+//= require icheck
 //= require_tree .

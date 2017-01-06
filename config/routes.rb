@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get    '/policy/privacy', to: 'policy#privacy'
   get    '/policy/aup',     to: 'policy#acceptable'
 
-  get    "home/index",         to: 'home#index' 
+  get    "home/index",         to: 'home#index'
   get    "home/minor",         to: 'home#minor'
 
 end

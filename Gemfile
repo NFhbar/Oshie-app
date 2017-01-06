@@ -24,6 +24,12 @@ gem 'devise'
 #measure password strength and reject weak passwords
 gem 'devise_zxcvbn'
 
+#fullcalendar (https://github.com/bokmann/fullcalendar-rails)
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+
+#icheck (https://github.com/cubus/icheck-rails)
+gem 'icheck-rails'
 
 group :development, :test do
   gem 'sqlite3', '1.3.12'

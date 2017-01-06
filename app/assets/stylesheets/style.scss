@@ -8,7 +8,7 @@
 // Google Fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
 
-// Bootstra
+// Bootstrap
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -16,7 +16,7 @@
 @import "base/variables";
 @import "base/mixins";
 
-// INSPINIA Theme Elements
+//  Theme Elements
 @import "base/typography";
 @import "base/navigation";
 @import "base/top_navigation";
@@ -39,7 +39,7 @@
 // For demo only - config box style
 @import "base/theme-config";
 
-// INSPINIA Skins
+// Skins
 @import "base/skins";
 @import "base/md-skin";
 
@@ -49,6 +49,8 @@
 // Custom style
 // Your custom style to override base style
 @import "base/custom";
+
+@import "icheck/square/_all"; //includes all color schemes
 
 // Clear layout on print mode
 @media print {
@@ -62,5 +64,3 @@
     margin: 0;
   }
 }
-
-

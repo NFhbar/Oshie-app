@@ -9,4 +9,5 @@ class HomeController < ApplicationController
 
   def minor
   end
+
 end
