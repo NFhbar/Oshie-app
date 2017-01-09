@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="m-b-md">
+      <a href="#" class="btn btn-primary btn-md pull-right">Edit class</a>
+      <h2>History 101</h2>
+    </div>
+    <dl class="dl-horizontal">
+      <dt>Status:</dt>
+      <dd><span class="label label-primary"><i class="fa fa-pencil"></i>Active</span></dd>
+    </dl>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-5">
+    <dl class="dl-horizontal">
+      <dt>Created by:</dt>
+      <dd><%= current_user.first_name%> <%= current_user.last_name%></strong></dd>
+      <dt>Contact:</dt>
+      <dd> <%= current_user.email%></dd>
+      <dt>Assesments:</dt>
+      <dd>  3</dd>
+      <dt>Term:</dt>
+      <dd>Fall 17</dd>
+      <dt>Institution</dt>
+      <dd> <%= current_user.company_name%></dd>
+    </dl>
+  </div>
+  <div class="col-lg-7" id="cluster_info">
+    <dl class="dl-horizontal">
+      <dt>Last Updated:</dt>
+      <dd> 16/08/2017 </dd>
+      <dt>Created:</dt>
+      <dd> 10/07/2017 </dd>
+      <dt>Students:</dt>
+      <dd>26</dd>
+      <dt>Schedule:</dt>
+      <dd>M/W/F 2-3pm</dd>
+      <dt>Location:</dt>
+      <dd>Humanities 201</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-10">
+    <dl class="dl-horizontal">
+      <dt>Start date<br/>
+        07/01/17</dt>
+      <dd>
+        <div class="progress progress-striped active m-b-sm">
+          <div style="width: 60%;" class="progress-bar"></div>
+        </div>
+        <small>Class completed: <strong>60%</strong>.</small>
+      </dd>
+    </dl>
+  </div>
+  <div class= "col-lg-2">
+    <dt>End date<br/>
+      07/07/17</dt>
+  </div>
+</div>

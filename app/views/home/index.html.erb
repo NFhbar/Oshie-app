@@ -1,24 +1,15 @@
 <% provide(:title, "My Dashboard") %>
 
 <div class="wrapper wrapper-content">
-
-<div class="row">
-
-  <!-- profile -->
-  <div class="col-md-4">
-      <div class="ibox float-e-margins">
-        <%= render :partial => 'profile' %>
-      </div>
-      <div class="ibox-content">
-        <%= render :partial => 'classes' %>
-    </div>
-  </div><!-- col-md -->
-
-  <!-- profile -->
-  <div class="col-md-8">
-    <%= render :partial => 'calendar' %>
-  </div><!-- col-md -->
-
-</div>
-
+  <div class="row">
+    <!-- profile -->
+    <div class="col-md-4">
+      <%= render :partial => 'profile' %>
+    </div><!-- col-md -->
+    <!-- profile -->
+    <div class="col-md-8">
+      <%= render :partial => 'content' %>
+      <%= render :partial => 'calendar' %>
+    </div><!-- col-md -->
+  </div><!-- row -->
 </div><!-- wrapper -->

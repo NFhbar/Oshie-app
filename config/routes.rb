@@ -10,4 +10,7 @@ Rails.application.routes.draw do
   get    "home/index",         to: 'home#index'
   get    "home/minor",         to: 'home#minor'
 
+  get    "classes/myClasses",  to: 'classes#my_classes'
+  get    "classes/class",      to: 'classes#class_details'
+
 end

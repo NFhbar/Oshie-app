@@ -1,22 +1,21 @@
+<div class="ibox float-e-margins">
+  <div class="ibox-title">
+    <h5>Profile</h5>
+  </div><!-- ibox-title -->
 
-    <div class="ibox-title">
-        <h5>Profile</h5>
-    </div><!-- ibox-title -->
-
-    <div class="ibox-content no-padding border-left-right">
-        <img alt="image" class="img-responsive " src="<%= image_path('exampleimg/profile_big.jpg') %>">
-    </div><!-- ibox image -->
+  <div class="ibox-content no-padding border-left-right">
+    <img alt="image" class="img-responsive " src="<%= image_path('exampleimg/profile_big.jpg') %>">
+  </div><!-- ibox image -->
 
     <div class="ibox-content profile-content">
-
-        <!-- user profile -->
-        <h4><strong><%= current_user.first_name%>
-        <%= current_user.last_name%></strong></h4>
-        <p><%= current_user.company_name%></p>
-        <p><%= current_user.email%></p>
-        <h5>About me</h5>
-        <p>Professor of History</p>
-        <p>Fall 17</p>
+      <!-- user profile -->
+      <h4><strong><%= current_user.first_name%>
+      <%= current_user.last_name%></strong></h4>
+      <p><%= current_user.company_name%></p>
+      <p><%= current_user.email%></p>
+      <h5>About me</h5>
+      <p>Professor of History</p>
+      <p>Fall 17</p>
 
         <!-- edit button -->
         <div class="user-button">
@@ -47,3 +46,4 @@
           </div>
       </div><!-- user button -->
     </div><!-- ibox profile content -->
+  </div>

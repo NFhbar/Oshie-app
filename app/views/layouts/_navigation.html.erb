@@ -22,16 +22,27 @@
           Oshie
         </div>
       </li>
+
+      <!-- landing profile -->
       <li class="<%= 'active' if current_page?('/home/index') %>">
         <%= link_to "/home/index" do %>
           <i class="fa fa-home"></i> <span class="nav-label">Home</span>
         <% end %>
       </li>
-      <li class="<%= 'active' if current_page?('/home/minor') %>">
-        <%= link_to "/home/minor" do %>
-          <i class="fa fa-users"></i> <span class="nav-label">Classes</span>
-        <% end %>
+
+      <!-- Classes -->
+      <li class="<%= is_active_controller('classes') %>">
+          <a href=""><i class="fa fa-users"></i>
+            <span class="nav-label" data-i18n="nav.dashboard">Classes</span>
+            <span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse <%= is_active_controller('classes') %>">
+              <li class="<%= is_active_action('my_classes') %>">
+              <%= link_to "My Classes", classes_myClasses_path %></li>
+
+          </ul>
       </li>
+
+
     </ul>
   </div>
 </nav>

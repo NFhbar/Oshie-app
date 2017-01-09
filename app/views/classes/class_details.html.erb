@@ -1,0 +1,36 @@
+<% provide(:title, "History 101") %>
+
+<div class="row">
+  <div class="col-lg-9">
+    <div class="wrapper wrapper-content animated fadeInUp">
+      <div class="ibox">
+        <div class="ibox-content">
+
+          <!-- class Info (should render dymically) -->
+          <%= render :partial => 'classInfo' %>
+
+          <div class="row m-t-sm">
+            <div class="col-lg-12">
+              <div class="panel blank-panel">
+                <%= render :partial => 'classPanelHeading' %>
+                  <div class="panel-body">
+                    <div class="tab-content">
+                      <%= render :partial => 'classTab1' %>
+                      <%= render :partial => 'classTab2' %>
+                      <%= render :partial => 'classTab3' %>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+      <div class="wrapper wrapper-content project-manager">
+        <%= render :partial => 'classDescription' %>
+      </div>
+  </div>
+</div>

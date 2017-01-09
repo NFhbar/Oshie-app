@@ -1,0 +1,83 @@
+<div class="project-list">
+  <table class="table table-hover">
+    <tbody>
+
+      <!-- classes should dynamically update from class model -->
+
+      <!-- example class -->
+      <tr>
+        <td class="project-status">
+          <span class="label label-primary"><i class="fa fa-pencil"></i>Active</span>
+        </td>
+        <td class="project-title">
+          <%= link_to "History 101", classes_class_path%>
+          <br/>
+          <small>Created 14.08.2014</small>
+        </td>
+        <td class="project-stats">
+            <small>Term: Fall 17</small>
+            <br/>
+            <small>Students: 26</small>
+            <br/>
+            <small>Assesments: 3</small>
+        </td>
+        <td class="project-actions">
+          <%= link_to classes_class_path, class: "btn btn-white btn-sm" do %>
+            <i class="fa fa-folder"></i> View
+          <% end %>
+
+          <%= link_to '#', class: "btn btn-white btn-sm" do %>
+            <i class="fa fa-pencil"></i> Edit
+          <% end %>
+        </td>
+      </tr>
+
+      <!-- example class -->
+      <tr>
+        <td class="project-status">
+          <span class="label label-primary"><i class="fa fa-pencil"></i>Active</span>
+        </td>
+        <td class="project-title">
+          <a href="#">Chemistry 15</a>
+          <br/>
+          <small>Created 1.03.2016</small>
+        </td>
+        <td class="project-stats">
+            <small>Term: Winter 17</small>
+            <br/>
+            <small>Students: 34</small>
+            <br/>
+            <small>Assesments: 6</small>
+        </td>
+        <td class="project-actions">
+          <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+          <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+        </td>
+      </tr>
+
+      <!-- example class -->
+      <tr>
+        <td class="project-status">
+          <span class="label label-success"><i class="fa fa-check"></i>Completed</span>
+        </td>
+        <td class="project-title">
+          <a href="#">English 2</a>
+          <br/>
+          <small>Created 9.02.2015</small>
+        </td>
+        <td class="project-stats">
+            <small>Term: Winter 12</small>
+            <br/>
+            <small>Students: 12</small>
+            <br/>
+            <small>Asessments: 0</small>
+        </td>
+        <td class="project-actions">
+          <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+          <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div><!-- project list -->
