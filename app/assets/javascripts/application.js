@@ -23,4 +23,7 @@
 //= require moment
 //= require fullcalendar
 //= require icheck
+//= require sweetalert/sweetalert.min.js
+//= require chosen/chosen.jquery.js
+//= require chartjs/Chart.min.js
 //= require_tree .

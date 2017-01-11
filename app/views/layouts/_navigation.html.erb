@@ -38,6 +38,8 @@
           <ul class="nav nav-second-level collapse <%= is_active_controller('classes') %>">
               <li class="<%= is_active_action('my_classes') %>">
               <%= link_to "My Classes", classes_myClasses_path %></li>
+              <li class="<%= is_active_action('new_class') %>">
+              <%= link_to "Create New Class", classes_newClass_path %></li>
 
           </ul>
       </li>

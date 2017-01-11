@@ -17,4 +17,6 @@
  *= require classes
  *= require alerts
  *= require fullcalendar
+ *= require sweetalert/sweetalert.css
+ *= require chosen/bootstrap-chosen.css
  */

@@ -1,0 +1,85 @@
+<div class="tab-pane" id="tab-4">
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="ibox float-e-margins">
+              <div class="ibox-content no-borders">
+                  <div class="row">
+                      <div class="col-sm-7 m-b-xs">
+                        <div class="form-group">
+                            <div>
+                                <select data-placeholder="Select Student" class="chosen-select"  tabindex="2">
+                                    <option value="All Students">All Students</option>
+                                    <option value="Last1 First1">Last1 First1</option>
+                                    <option value="Last2 First2">Last2 First2</option>
+                                    <option value="Last3 First3">Last3 First3</option>
+                                    <option value="Last4 First4">Last4 First4</option>
+                                </select>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-5 m-b-xs">
+                          <div data-toggle="buttons" class="btn-group">
+                              <label class="btn btn-sm btn-white active"> <input type="radio" id="option1" name="options"> Total </label>
+                              <label class="btn btn-sm btn-white"> <input type="radio" id="option2" name="options"> Precentage </label>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="table-responsive">
+                      <table class="table table-striped">
+                          <thead>
+                          <tr>
+                              <th>Asignment </th>
+                              <th>Lowest </th>
+                              <th>Highest</th>
+                              <th>Average</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                              <td>Midterm 1</td>
+                              <td>23/100</td>
+                              <td>99/100</td>
+                              <td>69/100</td>
+                          </tr>
+                          <tr>
+                            <td>Homework 1</td>
+                            <td>12/100</td>
+                            <td>90/100</td>
+                            <td>57/100</td>
+                          </tr>
+                          <tr>
+                            <td>Midterm 2</td>
+                            <td>35/100</td>
+                            <td>92/100</td>
+                            <td>81/100</td>
+                          </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+
+              <div class="ibox-content">
+                <canvas id="barChart" height="140"></canvas>
+              </div>
+
+              <div class="ibox-content">
+                <div>
+                  <div class="form-group">
+                      <div>
+                          <select data-placeholder="Select Assesment" class="test-select"
+                          tabindex="2">
+                              <option value="All">All</option>
+                              <option value="Last1 First1">Midterm 1</option>
+                              <option value="Last2 First2">Homework 1</option>
+                              <option value="Last3 First3">Midterm 2</option>
+                          </select>
+                      </div>
+                  </div>
+                    <canvas id="doughnutChart" height="140"></canvas>
+                </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
