@@ -247,6 +247,7 @@ DEPENDENCIES
   icheck-rails
   jbuilder (= 2.4.1)
   jquery-rails (= 4.1.1)
+  jquery-ui-rails
   listen (= 3.0.8)
   minitest-reporters (= 1.1.9)
   momentjs-rails

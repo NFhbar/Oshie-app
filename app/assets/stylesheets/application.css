@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require font-awesome
+ *= require jquery-ui
  *= require animate/animate.css
  *= require style
  *= require landing
@@ -19,4 +20,5 @@
  *= require fullcalendar
  *= require sweetalert/sweetalert.css
  *= require chosen/bootstrap-chosen.css
+ *= require datepicker/datepicker3.css
  */

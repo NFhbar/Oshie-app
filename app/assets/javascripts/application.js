@@ -13,6 +13,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require bootstrap-sprockets
 //= require metisMenu/jquery.metisMenu.js
 //= require pace/pace.min.js
@@ -26,4 +27,5 @@
 //= require sweetalert/sweetalert.min.js
 //= require chosen/chosen.jquery.js
 //= require chartjs/Chart.min.js
+//= require datepicker/bootstrap-datepicker.js
 //= require_tree .
