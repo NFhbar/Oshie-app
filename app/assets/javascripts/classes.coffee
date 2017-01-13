@@ -69,7 +69,7 @@ $(document).ready ->
     calendarWeeks: true
     autoclose: true
 
-  #==========================
+#==========================
   #New Class calendar
   #========================
   $('#external-events div.external-event').each ->
@@ -152,5 +152,29 @@ $(document).ready ->
       }
     ]
 
+  $('.dataTables-example2').DataTable
+    pageLength: 25
+    responsive: true
+    dom: '<"html5buttons"B>lTfgitp'
+    buttons: [
+      { extend: 'copy' }
+      { extend: 'csv' }
+      {
+        extend: 'excel'
+        title: 'ExampleFile'
+      }
+      {
+        extend: 'pdf'
+        title: 'ExampleFile'
+      }
+      {
+        extend: 'print'
+        customize: (win) ->
+          $(win.document.body).addClass 'white-bg'
+          $(win.document.body).css 'font-size', '10px'
+          $(win.document.body).find('table').addClass('compact').css 'font-size', 'inherit'
+          return
+      }
+    ]
 
   return

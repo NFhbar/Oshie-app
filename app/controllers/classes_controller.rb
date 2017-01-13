@@ -7,4 +7,7 @@ class ClassesController < ApplicationController
   def class_details
   end
 
+  def new_class
+  end
+
 end
