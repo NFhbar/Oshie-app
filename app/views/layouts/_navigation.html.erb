@@ -44,6 +44,17 @@
           </ul>
       </li>
 
+      <!-- Evaluations -->
+      <li class="<%= is_active_controller('evaluations') %>">
+          <a href=""><i class="fa fa-pencil-square-o"></i>
+            <span class="nav-label" data-i18n="nav.dashboard">Evaluations</span>
+            <span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse <%= is_active_controller('evaluations') %>">
+              <li class="<%= is_active_action('my_evaluations') %>">
+              <%= link_to "My Evaluations", evaluations_myEvaluations_path %></li>
+          </ul>
+      </li>
+
 
     </ul>
   </div>

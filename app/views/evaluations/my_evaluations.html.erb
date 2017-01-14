@@ -1,0 +1,110 @@
+<% provide(:title, "My Evaluations") %>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+      <h2>My Evaluations</h2>
+      <ol class="breadcrumb"></ol>
+  </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+
+            <div class="ibox-content">
+
+              <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                placeholder="Search in table">
+                <table class="footable table table-stripped toggle-arrow-tiny"
+                data-page-size="8" data-filter=#filter>
+                    <thead>
+                    <tr>
+                        <th data-toggle="true">Title</th>
+                        <th>Subject</th>
+                        <th>Created</th>
+                        <th data-hide="all">Used in</th>
+                        <th data-hide="all">Questions</th>
+                        <th data-hide="all">Average</th>
+                        <th data-hide="all">Description</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>History 101 Midterm</td>
+                        <td>History 101, History 10</td>
+                        <td>02/05/16</td>
+                        <td>History 101, General History</td>
+                        <td>25</td>
+                        <td>66%</td>
+                        <td>Multiple choice US history test from the 1900
+                          to today</td>
+                          <td >
+                              <div class="btn-group">
+                                  <button class="btn-white btn btn-xs">View</button>
+                                  <button class="btn-white btn btn-xs">Edit</button>
+                              </div>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>Civics 2 Final</td>
+                        <td>Civics 2, Civics 10</td>
+                        <td>01/03/15</td>
+                        <td>Civic Education</td>
+                        <td>12</td>
+                        <td>87%</td>
+                        <td>Multiple choice civics test</td>
+                          <td >
+                              <div class="btn-group">
+                                  <button class="btn-white btn btn-xs">View</button>
+                                  <button class="btn-white btn btn-xs">Edit</button>
+                              </div>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>English 2 Test</td>
+                        <td>English, Freshman</td>
+                        <td>08/01/14</td>
+                        <td>English intro, English Freshman, Highschool</td>
+                        <td>30</td>
+                        <td>86%</td>
+                        <td>English test with different type of questions</td>
+                          <td >
+                              <div class="btn-group">
+                                  <button class="btn-white btn btn-xs">View</button>
+                                  <button class="btn-white btn btn-xs">Edit</button>
+                              </div>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry Homewokr</td>
+                        <td>Chemistry 2</td>
+                        <td>08/03/15</td>
+                        <td>Intro to Chemistry, College Level</td>
+                        <td>10</td>
+                        <td>95%</td>
+                        <td>Chemistry homework for intro Chemistry class</td>
+                          <td >
+                              <div class="btn-group">
+                                  <button class="btn-white btn btn-xs">View</button>
+                                  <button class="btn-white btn btn-xs">Edit</button>
+                              </div>
+                          </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <ul class="pagination pull-right"></ul>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
