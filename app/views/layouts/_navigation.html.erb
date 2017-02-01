@@ -52,6 +52,8 @@
           <ul class="nav nav-second-level collapse <%= is_active_controller('evaluations') %>">
               <li class="<%= is_active_action('my_evaluations') %>">
               <%= link_to "My Evaluations", evaluations_myEvaluations_path %></li>
+              <li class="<%= is_active_action('new_eval') %>">
+              <%= link_to "New Evaluation", evaluations_newEvaluation_path %></li>
           </ul>
       </li>
 

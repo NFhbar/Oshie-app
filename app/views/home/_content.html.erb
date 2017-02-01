@@ -6,16 +6,44 @@
     </div>
   </div><!-- ibox title -->
   <div class="ibox-content">
+
     <div class="row">
-      <div class="col-md-4">
-          <%= link_to "My Classes", '#', class: "btn btn-sm btn-primary" %>
+      <div class="form-group"><label class="col-sm-2 control-label">My Classes</label>
+        <div class="col-sm-6">
+          <select data-placeholder="Select Type" class="chosen-select"  tabindex="2">
+              <option value="History 101">History 101</option>
+              <option value="Geography 2">Geography 2</option>
+              <option value="Math 1">Math 1</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+            <%= link_to "Go!", '#', class: "btn btn-sm btn-primary btn-circle" %>
+        </div>
+        <div class="col-md-2">
+            <%= link_to "New Class", classes_newClass_path, class: "btn btn-sm btn-primary" %>
+        </div>
       </div>
-      <div class="col-md-4">
-        <%= link_to "My Tests", '#', class: "btn btn-sm btn-primary" %>
+    </div>
+
+      <div class="hr-line-dashed"></div>
+
+      <div class="row">
+        <div class="form-group"><label class="col-sm-2 control-label">My Evaluations</label>
+          <div class="col-sm-6">
+            <select data-placeholder="Select Type" class="chosen-select"  tabindex="2">
+                <option value="History 101 Quiz">History 101 Quiz</option>
+                <option value="Geography 2 Midterm">Geography 2 Midterm</option>
+                <option value="Math 1 Final">Math 1 Final</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+              <%= link_to "Go!", '#', class: "btn btn-sm btn-primary btn-circle" %>
+          </div>
+          <div class="col-md-2">
+              <%= link_to "New Evaluation", evaluations_newEvaluation_path,
+              class: "btn btn-sm btn-primary" %>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <%= link_to "My Files", '#', class: "btn btn-sm btn-primary" %>
-      </div>
-    </div><!-- row -->
   </div><!-- ibox content -->
 </div><!-- ibox -->

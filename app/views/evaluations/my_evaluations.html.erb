@@ -43,7 +43,9 @@
                           to today</td>
                           <td >
                               <div class="btn-group">
-                                  <button class="btn-white btn btn-xs">View</button>
+                                  <%= link_to evaluations_newEvaluation_path, class: "btn-white btn btn-xs" do %>
+                                     View
+                                  <% end %>
                                   <button class="btn-white btn btn-xs">Edit</button>
                               </div>
                           </td>
@@ -79,7 +81,7 @@
                           </td>
                     </tr>
                     <tr>
-                        <td>Chemistry Homewokr</td>
+                        <td>Chemistry Homework</td>
                         <td>Chemistry 2</td>
                         <td>08/03/15</td>
                         <td>Intro to Chemistry, College Level</td>

@@ -28,4 +28,5 @@
 //= require chosen/chosen.jquery.js
 //= require chartjs/Chart.min.js
 //= require datepicker/bootstrap-datepicker.js
+//= require tinymce-jquery
 //= require_tree .

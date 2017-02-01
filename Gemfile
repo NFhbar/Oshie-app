@@ -34,6 +34,9 @@ gem 'icheck-rails'
 #jquery ui
 gem 'jquery-ui-rails'
 
+# TinyMCE text editor
+gem 'tinymce-rails'
+
 group :development, :test do
   gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.0', platform: :mri

@@ -1,0 +1,26 @@
+<% provide(:title, "New Evaluation") %>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>New Evaluation</h2>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight ecommerce">
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="tabs-container">
+              <ul class="nav nav-tabs">
+                  <li class="active"><a data-toggle="tab" href="#tab-1">Info</a></li>
+                  <li class=""><a data-toggle="tab" href="#tab-2">Questions</a></li>
+              </ul>
+              <div class="tab-content">
+                <%= render :partial => 'newevalTab1' %>
+                <%= render :partial => 'newevalTab2' %>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

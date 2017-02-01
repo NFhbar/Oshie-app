@@ -1,0 +1,63 @@
+<div id="tab-1" class="tab-pane active">
+  <div class="panel-body">
+    <fieldset class="form-horizontal">
+        <div class="form-group"><label class="col-sm-2 control-label">Title</label>
+            <div class="col-sm-10"><input type="text" class="form-control"
+              placeholder="History 101 Midterm 1"></div>
+        </div>
+        <div class="form-group"><label class="col-sm-2 control-label">Subject</label>
+            <div class="col-sm-10"><input type="text" class="form-control"
+               placeholder="History 101"></div>
+        </div>
+
+        <div class="form-group"><label class="col-sm-2 control-label">Class</label>
+            <div class="col-sm-10"><input type="text" class="form-control"
+              placeholder="History 101"></div>
+        </div>
+        <div class="form-group"><label class="col-sm-2 control-label">Description</label>
+            <div class="col-sm-10">
+              <div class="feed-element">
+                <div class="chat-form">
+                  <form role="form">
+                      <textarea class="form-control" placeholder="Description"></textarea>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="form-group"><label class="col-sm-2 control-label">Type</label>
+          <div class="col-sm-3">
+          <select data-placeholder="Select Type" class="chosen-select"  tabindex="2">
+              <option value="Quiz">Quiz</option>
+              <option value="Test">Test</option>
+              <option value="Homework">Homework</option>
+              <option value="Discussion">Discussion</option>
+              <option value="Assingment">Assignment</option>
+          </select>
+          </div>
+        </div>
+
+        <div class="form-group" id="data_1"><label class="col-sm-2 control-label">Due Date</label>
+          <div class="col-sm-3">
+            <div class="input-group date"><span class="input-group-addon">
+              <i class="fa fa-calendar"></i>
+              </span><input type="text" class="form-control" value="01/01/2017">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group" id="data_1"><label class="col-sm-2 control-label">Make Available on</label>
+          <div class="col-sm-3">
+            <div class="input-group date"><span class="input-group-addon">
+              <i class="fa fa-calendar"></i>
+              </span><input type="text" class="form-control" value="01/01/2017">
+            </div>
+          </div>
+        </div>
+
+    </fieldset>
+
+    <%= render :partial => 'questionsList' %>
+  </div>
+</div>
