@@ -1,12 +1,165 @@
-<div class="wrapper wrapper-content animated fadeInRight">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center m-t-lg">
-                <h1>
-                    Simple example of second view
-                </h1>
-                <small>Configure in home_controller.rb as minor view.</small>
-            </div>
-        </div>
+<div class="row  border-bottom white-bg dashboard-header">
+    <div class="col-sm-3">
+        <h2>Welcome <strong><%= current_user.first_name%></strong></h2>
+        <small>You have 16 messages and 8 notifications.</small>
+        <button type="button" class="btn btn-primary btn-xs">View</button>
     </div>
+
+    <div class="col-sm-3">
+
+    </div>
+</div>
+
+<div class="row  border-bottom grey-bg dashboard-header">
+  <div class="col-lg-4">
+      <div class="ibox float-e-margins">
+          <div class="ibox-title">
+              <h5>Messages</h5>
+              <div class="ibox-tools">
+                  <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="ibox-content ibox-heading">
+              <h3><i class="fa fa-envelope-o"></i> New messages</h3>
+              <small><i class="fa fa-tim"></i> You have 16 new messages.</small>
+          </div>
+          <div class="ibox-content">
+              <div class="feed-activity-list">
+
+                  <div class="feed-element">
+                      <div>
+                          <small class="pull-right text-navy">1m ago</small>
+                          <strong>Monica Smith</strong> from History 101
+                          <div>message</div>
+                          <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+                      </div>
+                  </div>
+
+                  <div class="feed-element">
+                      <div>
+                          <small class="pull-right text-navy">2m ago</small>
+                          <strong>Jogn Angel</strong> from Math 2
+                          <div>Message</div>
+                          <small class="text-muted">Today 2:23 pm - 11.06.2014</small>
+                      </div>
+                  </div>
+
+                    <div class="feed-element no-borders">
+                      <div class="text-center">
+                          <button class="btn btn-primary btn-block m-t"> View All</button>
+                      </div>
+                    </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-lg-4">
+      <div class="ibox float-e-margins">
+          <div class="ibox-title">
+              <h5>Notifications</h5>
+              <div class="ibox-tools">
+                  <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="ibox-content ibox-heading">
+              <h3><i class="fa fa-bell-o"></i> New notifications</h3>
+              <small><i class="fa fa-tim"></i> You have 8 new notifications.</small>
+          </div>
+          <div class="ibox-content">
+              <div class="feed-activity-list">
+
+                  <div class="feed-element">
+                      <div>
+                        <i class="fa fa-calendar fa-fw"></i> History 101 Homework due today
+                      </div>
+                  </div>
+
+                  <div class="feed-element">
+                      <div>
+                        <i class="fa fa-exclamation fa-fw"></i> 2 students dropped Math 1
+                      </div>
+                  </div>
+
+                  <div class="feed-element">
+                      <div>
+                        <i class="fa fa-calendar fa-fw"></i> Geology Final next week
+                      </div>
+                  </div>
+
+
+                    <div class="feed-element no-borders">
+                      <div class="text-center">
+                        <button class="btn btn-primary btn-block m-t"> View All</button>
+                      </div>
+                    </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="col-lg-4">
+      <div class="ibox float-e-margins">
+          <div class="ibox-title">
+              <h5>Classes</h5>
+              <div class="ibox-tools">
+                  <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="ibox-content ibox-heading">
+              <h3><i class="fa fa-pencil-square-o"></i> My Classes</h3>
+              <small><i class="fa fa-tim"></i> You have 3 active classes.</small>
+          </div>
+          <div class="ibox-content">
+              <div class="feed-activity-list">
+
+                  <div class="feed-element">
+                      <div>
+                        <span class="label label-primary">
+                          <i class="fa fa-pencil"></i>Active</span> History 101
+                      </div>
+                  </div>
+
+                  <div class="feed-element">
+                    <div>
+                      <span class="label label-primary">
+                        <i class="fa fa-pencil"></i>Active</span> Math 2
+                    </div>
+                  </div>
+
+                  <div class="feed-element">
+                    <div>
+                      <span class="label label-primary">
+                        <i class="fa fa-pencil"></i>Active</span> Geology 3
+                    </div>
+                  </div>
+
+
+                    <div class="feed-element no-borders">
+                      <div class="text-center">
+                        <%= link_to classes_myClasses_path,
+                        class: "btn btn-primary btn-block m-t" do %>
+                         View All
+                        <% end %>
+                      </div>
+                    </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
 </div>

@@ -24,8 +24,8 @@
       </li>
 
       <!-- landing profile -->
-      <li class="<%= 'active' if current_page?('/home/index') %>">
-        <%= link_to "/home/index" do %>
+      <li class="<%= 'active' if current_page?('/home/minor') %>">
+        <%= link_to "/home/minor" do %>
           <i class="fa fa-home"></i> <span class="nav-label">Home</span>
         <% end %>
       </li>
@@ -54,6 +54,17 @@
               <%= link_to "My Evaluations", evaluations_myEvaluations_path %></li>
               <li class="<%= is_active_action('new_eval') %>">
               <%= link_to "New Evaluation", evaluations_newEvaluation_path %></li>
+          </ul>
+      </li>
+
+      <!-- Lessons -->
+      <li class="<%= is_active_controller('lessons') %>">
+          <a href=""><i class="fa fa-list-alt"></i>
+            <span class="nav-label" data-i18n="nav.dashboard">Lessons</span>
+            <span class="fa arrow"></span></a>
+          <ul class="nav nav-second-level collapse <%= is_active_controller('lessons') %>">
+              <li class="<%= is_active_action('my_lessons') %>">
+              <%= link_to "My Lessons", lessons_myLessons_path %></li>
           </ul>
       </li>
 

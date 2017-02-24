@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get    "evaluations/myEvaluations",   to: 'evaluations#my_evaluations'
   get    "evaluations/newEvaluation",   to: 'evaluations#new_eval'
 
+  get    "lessons/myLessons",   to: 'lessons#my_lessons'
+
 end
