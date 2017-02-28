@@ -192,7 +192,7 @@
                         </p>
 
                         <textarea id="code1">
-  <script>
+
   // Code goes here
 
   // For demo purpose - animation css script
@@ -209,7 +209,7 @@
                   }, 2000);
               });
   }
-  </script>
+
                         </textarea>
 
                         <p class="small">
@@ -463,3 +463,72 @@
 
 
 </div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+var ready = function() {
+  var editor_one = CodeMirror.fromTextArea(document.getElementById("code1"), {
+      lineNumbers: true,
+      matchBrackets: true,
+      styleActiveLine: true,
+      theme: "ambiance"
+  });
+
+  var mapData = {
+      "US": 498,
+      "SA": 200,
+      "CA": 1300,
+      "DE": 220,
+      "FR": 540,
+      "CN": 120,
+      "AU": 760,
+      "BR": 550,
+      "IN": 200,
+      "GB": 120,
+      "RU": 2000
+  };
+
+  $('#world-map').vectorMap({
+      map: 'world_mill_en',
+      backgroundColor: "transparent",
+      regionStyle: {
+          initial: {
+              fill: '#e4e4e4',
+              "fill-opacity": 1,
+              stroke: 'none',
+              "stroke-width": 0,
+              "stroke-opacity": 0
+          }
+      },
+      series: {
+          regions: [{
+              values: mapData,
+              scale: ["#1ab394", "#22d6b1"],
+              normalizeFunction: 'polynomial'
+          }]
+      },
+  });
+};
+
+  $(document).on('webkitfullscreenchange mozfullscreenchange fullscreenchange', function (e){
+      $('body').hasClass('fullscreen-video') ? $('body').removeClass('fullscreen-video') : $('body').addClass('fullscreen-video')
+  });
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
+
+
+// $(function() {
+//
+//
+//
+//
+// });
+
+
+
+</script>
+
+<% end %>

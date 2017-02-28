@@ -24,7 +24,7 @@
 
           <!-- Devise Flash Messages -->
           <%= render 'layouts/messages' %>
-          
+
           <!-- Main view  -->
           <%= yield %>
 
@@ -34,6 +34,8 @@
 
       </div><!-- End page wrapper-->
     </div><!-- End wrapper-->
+
+    <%= yield :javascript %>
 
   </body>
 </html>
