@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   # redirect user after succesful sign in
   def after_sign_in_path_for(resource)
-    home_index_path
+    home_minor_path
   end
 
   protected
