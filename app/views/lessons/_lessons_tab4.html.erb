@@ -1,0 +1,99 @@
+<div id="tab-4" class="tab-pane active">
+  <div class="pull-right">
+      <div class="tooltip-demo">
+          <button class="btn btn-white btn-xs lesson_visible" data-toggle="tooltip"
+          data-placement="left" title="">
+          <i class="fa fa-plug"></i>Go Live!</button>
+          <button class="btn btn-white btn-xs" data-toggle="tooltip"
+          data-placement="top" title="Mark as read">
+          <i class="fa fa-eye"></i> </button>
+          <button class="btn btn-white btn-xs" data-toggle="tooltip"
+          data-placement="top" title="" data-original-title="Mark as important">
+          <i class="fa fa-exclamation"></i> </button>
+          <button class="btn btn-white btn-xs lesson_delete" data-toggle="tooltip"
+          data-placement="top" title="" data-original-title="">
+          <i class="fa fa-trash-o"></i> </button>
+
+      </div>
+  </div>
+    <div class="small text-muted">
+        <i class="fa fa-clock-o"></i> Tuesday, 15 May 2014, 10:32 am
+    </div>
+
+    <h1>
+      New Slide
+    </h1>
+
+    <div class="row">
+        <div class="col-lg-6">
+          <%= text_area_tag :content, "Using tinymce, would like to incorporate wiris
+          for math and wiris quiz http://www.wiris.com/plugins/docs/tinymce", :class => "tinymce", :rows => 40, :cols => 120 %>
+
+          <%= tinymce %>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Add Lesson Tool</h5>
+                </div>
+                <div class="ibox-content profile-content">
+                  <div class="widget style1 navy-bg">
+                      <div class="row vertical-align">
+                          <div class="col-xs-3">
+                              <i class="fa fa-code fa-3x"></i>
+                          </div>
+                          <div class="col-xs-9 text-right">
+                              <h2 class="font-bold">Add Code Editor</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="widget style1 lazur-bg">
+                      <div class="row vertical-align">
+                          <div class="col-xs-3">
+                              <i class="fa fa-flask fa-3x"></i>
+                          </div>
+                          <div class="col-xs-9 text-right">
+                              <h2 class="font-bold">Add Science Editor</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="widget style1 yellow-bg">
+                      <div class="row vertical-align">
+                          <div class="col-xs-3">
+                              <i class="fa fa-globe fa-3x"></i>
+                          </div>
+                          <div class="col-xs-9 text-right">
+                              <h2 class="font-bold">Add Map Editor</h2>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="widget style1 blue-bg">
+                      <div class="row vertical-align">
+                          <div class="col-xs-3">
+                              <i class="fa fa-comments fa-3x"></i>
+                          </div>
+                          <div class="col-xs-9 text-right">
+                              <h2 class="font-bold">Add Discussion Board</h2>
+                          </div>
+                      </div>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+
+</script>
+
+<% end %>

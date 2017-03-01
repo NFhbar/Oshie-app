@@ -1,3 +1,5 @@
+<% provide(:title, "My Lessons") %>
+
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-10">
         <h2>My Lessons</h2>
@@ -33,6 +35,8 @@
             </div>
         </div>
     </div>
+    <p><%= link_to "Create New Lesson", lessons_lesson_path,
+    class: "btn btn-primary btn-md" %></p>
 </div>
 
 <div class="row">
@@ -80,7 +84,7 @@
                               data-toggle="tooltip"
                               data-placement="top" title=""
                               data-original-title="Move to trash">
-                               Delete</button>                                                           
+                               Delete</button>
                             </div>
                         </td>
                     </tr>

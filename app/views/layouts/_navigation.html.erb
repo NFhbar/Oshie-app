@@ -68,6 +68,8 @@
           <ul class="nav nav-second-level collapse <%= is_active_controller('lessons') %>">
               <li class="<%= is_active_action('my_lessons') %>">
               <%= link_to "My Lessons", lessons_myLessons_path %></li>
+              <li class="<%= is_active_action('lesson_details') %>">
+              <%= link_to "New Lesson", lessons_lesson_path %></li>
           </ul>
       </li>
 
