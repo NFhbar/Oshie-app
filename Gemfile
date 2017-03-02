@@ -37,6 +37,9 @@ gem 'jquery-ui-rails'
 # TinyMCE text editor
 gem 'tinymce-rails'
 
+# slick caoursel
+gem "jquery-slick-rails"
+
 group :development, :test do
   gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.0', platform: :mri
