@@ -1,0 +1,2 @@
+class OpenSchoolController < ApplicationController
+end

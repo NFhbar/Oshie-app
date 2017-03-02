@@ -20,4 +20,10 @@ Rails.application.routes.draw do
   get    "lessons/myLessons",   to: 'lessons#my_lessons'
   get    "lessons/lesson",      to: 'lessons#lesson_details'
 
+  get    "calendar/myCalendar", to: 'calendar#my_calendar'
+
+  get    "openschool/content",  to: 'open_school#open_school'
+
+  get    "forum/forums",        to: 'forum#forum_view'
+
 end

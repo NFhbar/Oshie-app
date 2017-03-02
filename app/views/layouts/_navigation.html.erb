@@ -73,6 +73,27 @@
           </ul>
       </li>
 
+      <!-- Calendar -->
+      <li class="<%= 'active' if current_page?('/calendar/myCalendar') %>">
+        <%= link_to "/calendar/myCalendar" do %>
+          <i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span>
+        <% end %>
+      </li>
+
+      <!-- Open School -->
+      <li class="<%= 'active' if current_page?('/openschool/content') %>">
+        <%= link_to "/openschool/content" do %>
+          <i class="fa fa-university"></i> <span class="nav-label">Open School</span>
+        <% end %>
+      </li>
+
+      <!-- Forum -->
+      <li class="<%= 'active' if current_page?('/forum/forums') %>">
+        <%= link_to "/forum/forums" do %>
+          <i class="fa fa-commenting-o"></i> <span class="nav-label">Forums</span>
+        <% end %>
+      </li>
+
 
     </ul>
   </div>
