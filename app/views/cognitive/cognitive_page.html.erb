@@ -1,0 +1,379 @@
+<% provide(:title, "Cognitive Stats") %>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Cognitive Stats</h2>
+  </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+          <div class="ibox-title">
+            <h5>Parameters <small>slect the cognitive parameters to assess</small></h5>
+            <div class="ibox-tools">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
+          </div>
+        <div class="ibox-content">
+
+          <div class="row">
+            <div class="form-group"><label class="col-sm-2 control-label">Class</label>
+              <div class="col-sm-8">
+                <select class="form-control m-b" name="account">
+                  <option>History 101</option>
+                  <option>Math 2</option>
+                  <option>Geology 3</option>
+                  <option>English 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group"><label class="col-sm-2 control-label">Student</label>
+              <div class="col-sm-8">
+                <select class="form-control m-b" name="account">
+                  <option>Mathew James</option>
+                  <option>Monica Sherman</option>
+                  <option>Enrique Adams</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <h3>Class Grade</h3>
+              <div class="m-r-md inline">
+                  <input type="text" value="75.6" class="dial m-r-sm"
+                  data-fgColor="#1AB394" data-width="85" data-height="85" />
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <h3>Test Average</h3>
+              <div class="m-r-md inline">
+                  <input type="text" value="69.5" class="dial m-r-sm"
+                  data-fgColor="#1AB398" data-width="85" data-height="85" />
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <h3>Assignment Average</h3>
+              <div class="m-r-md inline">
+                  <input type="text" value="86.4" class="dial m-r-sm"
+                  data-fgColor="#1AB398" data-width="85" data-height="85" />
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="widget style1 lazur-bg">
+                <div class="row">
+                  <div class="col-xs-4">
+                    <i class="fa fa-clock-o fa-3x"></i>
+                  </div>
+                  <div class="col-xs-8 text-right">
+                    <span> Time spent in lessons </span>
+                    <h2 class="font-bold">4.6 hrs</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>
+                Grade Progress
+                <small>compared to class average</small>
+              </h5>
+              <div ibox-tools></div>
+            </div>
+            <div class="ibox-content">
+              <div>
+                <canvas id="lineChart" height="140"></canvas>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="ibox float-e-margins">
+              <div class="ibox-title">
+                  <h5>Study time vs performance</h5>
+              </div>
+              <div class="ibox-content">
+                  <div>
+                      <canvas id="barChart" height="140"></canvas>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>Study time per Lesson <small>in minutes</small></h5>
+            </div>
+            <div class="ibox-content">
+              <div>
+                <canvas id="doughnutChart" height="140"></canvas>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>Time taking assignment vs grade <small>in minutes</small></h5>
+            </div>
+            <div class="ibox-content">
+              <div>
+                <canvas id="barChart2" height="140"></canvas>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>Participation <small>compared to rest of class</small></h5>
+            </div>
+            <div class="ibox-content">
+              <div>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="no-borders">
+                            You have messaged the instructor
+                        </td>
+                        <td  class="no-borders">
+                          <%= link_to "12 times", home_minor_path,
+                          class: "btn btn-info m-r-sm" %>
+                        </td class="no-borders">
+                        <td class="no-borders">
+                            The class has messaged the instructor
+                        </td>
+                        <td class="no-borders">
+                          <button class="btn btn-primary m-r-sm stats_demo"
+                          data-toggle="tooltip"
+                          data-placement="top" title=""
+                          data-original-title="">
+                           28 times</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            You have posted in the class forums
+                        </td>
+                        <td>
+                          <%= link_to "6 times", classes_class_path,
+                          class: "btn btn-info m-r-sm" %>
+                        </td>
+                        <td>
+                            The class has posted in the class forums
+                        </td>
+                        <td>
+                          <button class="btn btn-primary m-r-sm stats_demo2"
+                          data-toggle="tooltip"
+                          data-placement="top" title=""
+                          data-original-title="">
+                           11 times</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+              <h5>interaction with other students <small>in minutes</small></h5>
+            </div>
+            <div class="ibox-content">
+              <div>
+                <canvas id="doughnutChart" height="140"></canvas>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+  //========================================
+  // knobs
+  //========================================
+  $(".dial").knob({
+    'readOnly':true
+  });
+
+  //=========================================
+  //Grade Progress
+  //=========================================
+    var lineData = {
+        labels: ["Homework 1", "Midterm 1", "Homework 2", "Homework 3",
+        "Midterm 2", "Homework 4", "Final"],
+        datasets: [
+
+            {
+                label: "Student",
+                backgroundColor: 'rgba(26,179,148,0.5)',
+                borderColor: "rgba(26,179,148,0.7)",
+                pointBackgroundColor: "rgba(26,179,148,1)",
+                pointBorderColor: "#fff",
+                data: [28, 48, 40, 19, 86, 27, 90]
+            },{
+                label: "Class Average",
+                backgroundColor: 'rgba(220, 220, 220, 0.5)',
+                pointBorderColor: "#fff",
+                data: [65, 59, 80, 81, 56, 55, 40]
+            }
+        ]
+    };
+
+    var lineOptions = {
+        responsive: true
+    };
+
+    var ctx = document.getElementById("lineChart").getContext("2d");
+    new Chart(ctx, {type: 'line', data: lineData, options:lineOptions});
+
+    //================================================
+    //Study Time
+    //================================================
+    var barData = {
+        labels: ["Homework 1", "Midterm 1", "Homework 2", "Homework 3",
+        "Midterm 2", "Homework 4", "Final"],
+        datasets: [
+            {
+                label: "Grade",
+                backgroundColor: 'rgba(220, 220, 220, 0.5)',
+                pointBorderColor: "#fff",
+                data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+                label: "Study time in minutes",
+                backgroundColor: 'rgba(26,179,148,0.5)',
+                borderColor: "rgba(26,179,148,0.7)",
+                pointBackgroundColor: "rgba(26,179,148,1)",
+                pointBorderColor: "#fff",
+                data: [28, 48, 40, 19, 86, 27, 90]
+            }
+        ]
+    };
+
+    var barOptions = {
+        responsive: true
+    };
+
+    var ctx2 = document.getElementById("barChart").getContext("2d");
+    new Chart(ctx2, {type: 'bar', data: barData, options:barOptions});
+
+    //=========================================
+    //study time per lesson
+    //=========================================
+    var doughnutData = {
+        labels: ["Lesson 1","Lesson 2","Lesson 3" ],
+        datasets: [{
+            data: [300,50,100],
+            backgroundColor: ["#a3e1d4","#dedede","#b5b8cf"]
+        }]
+    } ;
+
+    var doughnutOptions = {
+        responsive: true
+    };
+
+    var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+    new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+    //================================================
+    //Time taking assesment vs grade
+    //================================================
+    var barData2 = {
+        labels: ["Homework 1", "Midterm 1", "Homework 2", "Homework 3",
+        "Midterm 2", "Homework 4", "Final"],
+        datasets: [
+            {
+                label: "Grade",
+                backgroundColor: 'rgba(220, 220, 220, 0.5)',
+                pointBorderColor: "#fff",
+                data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+                label: "Time taking assesment in minutes",
+                backgroundColor: 'rgba(26,179,148,0.5)',
+                borderColor: "rgba(26,179,148,0.7)",
+                pointBackgroundColor: "rgba(26,179,148,1)",
+                pointBorderColor: "#fff",
+                data: [49, 63, 12, 52, 32, 12, 101]
+            }
+        ]
+    };
+
+    var barOptions2 = {
+        responsive: true
+    };
+
+    var ctx3 = document.getElementById("barChart2").getContext("2d");
+    new Chart(ctx3, {type: 'bar', data: barData2, options:barOptions2});
+
+
+   //=======================================
+   //Sweet alert 1
+   //=======================================
+    $('.stats_demo').click(function () {
+        swal({
+          title: "Class Messages",
+          text: "12 students have messaged the instructor 28 times",
+          type: "info",
+        } );
+    });
+
+    //=======================================
+    //Sweet alert 2
+    //=======================================
+     $('.stats_demo2').click(function () {
+         swal({
+           title: "Class Forums",
+           text: "12 students have posted in the forums 46 times",
+           type: "info",
+         } );
+     });
+
+
+});
+
+</script>
+
+<% end %>

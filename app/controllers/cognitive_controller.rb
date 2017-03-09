@@ -1,0 +1,2 @@
+class CognitiveController < ApplicationController
+end

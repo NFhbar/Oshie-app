@@ -47,6 +47,14 @@
           </ul>
       </li>
 
+      <!-- Cognitive Stats -->
+      <li class="<%= 'active' if current_page?('/cognitive/stats') %>">
+        <%= link_to "/cognitive/stats" do %>
+          <i class="fa fa-line-chart"></i> <span class="nav-label">Cognitive Stats</span>
+          <span class="label label-primary pull-right">NEW</span>
+        <% end %>
+      </li>
+
       <!-- Evaluations -->
       <li class="<%= is_active_controller('evaluations') %>">
           <a href=""><i class="fa fa-pencil-square-o"></i>
@@ -71,6 +79,14 @@
               <li class="<%= is_active_action('lesson_details') %>">
               <%= link_to "New Lesson", lessons_lesson_path %></li>
           </ul>
+      </li>
+
+      <!-- My Rewards -->
+      <li class="<%= 'active' if current_page?('/rewards/myRewards') %>">
+        <%= link_to "/rewards/myRewards" do %>
+          <i class="fa fa-gift"></i> <span class="nav-label">My Rewards</span>
+          <span class="label label-primary pull-right">NEW</span>
+        <% end %>
       </li>
 
       <!-- Calendar -->

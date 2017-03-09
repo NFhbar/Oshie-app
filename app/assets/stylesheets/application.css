@@ -19,6 +19,8 @@
  *= require evaluations
  *= require lessons
  *= require open_school
+ *= require cognitive
+ *= require rewards
  *= require alerts
  *= require fullcalendar
  *= require sweetalert/sweetalert.css

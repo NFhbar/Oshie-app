@@ -1,0 +1,160 @@
+<% provide(:title, "My Rewards") %>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>My Rewards</h2>
+  </div>
+</div>
+
+<div class="wrapper wrapper-content">
+  <div class="row animated fadeInRight">
+    <div class="col-lg-6 col-lg-offset-3">
+      <div class="ibox float-e-margins">
+
+          <div class="ibox-content" id="ibox-content">
+
+            <div class="widget style1 navy-bg">
+              <div class="row vertical-align">
+                <div class="col-xs-3">
+                  <i class="fa fa-gift fa-3x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <h2 class="font-bold">History 101 Rewards</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="widget style1 lazur-bg">
+                  <div class="row vertical-align">
+                    <div class="col-xs-2">
+                      <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <div class="col-xs-10 text-right">
+                      <h5 class="font-bold">3 rewards claimed!</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="widget style1 yellow-bg">
+                  <div class="row vertical-align">
+                    <div class="col-xs-2">
+                      <i class="fa fa-star-o fa-2x"></i>
+                    </div>
+                    <div class="col-xs-10 text-right">
+                      <h5 class="font-bold">3 rewards to win!</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="widget style1 green-bg">
+                  <div class="row vertical-align">
+                    <div class="col-xs-2">
+                      <i class="fa fa-arrow-up fa-2x"></i>
+                    </div>
+                    <div class="col-xs-10 text-right">
+                      <h5 class="font-bold">Level 3 Achieved!</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row text-center">
+              <button type="button" class="btn btn-primary center-align" data-toggle="modal"
+              data-target="#myModal5">
+                  Manage My Rewards
+              </button>
+            </div>
+
+            <!-- modal windows -->
+            <%= render :partial => 'modals' %>
+
+            <!-- rewards list -->
+            <%= render :partial => 'rewards1' %>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% content_for :javascript do %>
+
+<script type="text/javascript">
+
+
+$(function() {
+
+   //=======================================
+   //Sweet alert 1
+   //=======================================
+    $('.reward1').click(function () {
+        swal({
+          title: "Reward Claimed",
+          text: "You scored a 92/100 in your last Homework assingment, higher than your last homework score, great job!",
+          type: "success",
+        } );
+    });
+
+    //=======================================
+    //Sweet alert 2
+    //=======================================
+     $('.reward2').click(function () {
+         swal({
+           title: "Reward Claimed",
+           text: "You scored 93/100 in your Midterm 1, well done!",
+           type: "success",
+         } );
+     });
+
+     //=======================================
+     //Sweet alert 3
+     //=======================================
+      $('.reward3').click(function () {
+          swal({
+            title: "Reward Claimed",
+            text: "You scored a 95/100 in your last Homework assingment, higher than your last homework score",
+            type: "success",
+          } );
+      });
+
+      //=======================================
+      //Sweet alert 4
+      //=======================================
+       $('.reward4').click(function () {
+           swal({
+             title: "Reward Claimed",
+             text: "You scored 96/100 in your Midterm 2, well done! Your coupon has been sent to your email.",
+             type: "success",
+
+           } );
+       });
+
+       //=======================================
+       //Sweet alert 5 Save Rewards Changes
+       //=======================================
+        $('.rewardChange').click(function () {
+            swal({
+              title: "Rewards Saved",
+              text: "Your rewards have been saved!",
+              type: "success",
+
+            } );
+        });
+
+
+
+});
+
+</script>
+
+<% end %>

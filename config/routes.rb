@@ -26,4 +26,8 @@ Rails.application.routes.draw do
 
   get    "forum/forums",        to: 'forum#forum_view'
 
+  get    "cognitive/stats",     to: 'cognitive#cognitive_page'
+
+  get    "rewards/myRewards",   to: 'rewards#my_rewards'
+
 end
