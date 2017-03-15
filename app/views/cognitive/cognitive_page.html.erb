@@ -207,11 +207,11 @@
     <div class="col-lg-6">
         <div class="ibox float-e-margins">
             <div class="ibox-title">
-              <h5>interaction with other students <small>in minutes</small></h5>
+              <h5>Average Grade per Assignment Type </h5>
             </div>
             <div class="ibox-content">
               <div>
-                <canvas id="doughnutChart" height="140"></canvas>
+                <canvas id="barChart3" height="140"></canvas>
               </div>
             </div>
         </div>
@@ -347,6 +347,31 @@ $(function() {
 
     var ctx3 = document.getElementById("barChart2").getContext("2d");
     new Chart(ctx3, {type: 'bar', data: barData2, options:barOptions2});
+
+    //=========================================
+    // Grade per assignment type
+    //=========================================
+    var barData3 = {
+        labels: ["Multiple Choice", "Open Answers", "Tests", "Homework",
+        "Discussion Boards", "Extra Credit"],
+        datasets: [
+          {
+            label: "Assignment Type",
+            backgroundColor: 'rgba(26,179,148,0.5)',
+            borderColor: "rgba(26,179,148,0.7)",
+            pointBackgroundColor: "rgba(26,179,148,1)",
+            pointBorderColor: "#fff",
+            data: [49, 63, 12, 52, 32, 12]
+          }
+      ]
+    };
+
+    var barOptions3 = {
+      responsive: true
+    };
+
+    var ctx5 = document.getElementById("barChart3").getContext("2d");
+    new Chart(ctx5, {type: 'bar', data: barData3, options: barOptions3});
 
 
    //=======================================

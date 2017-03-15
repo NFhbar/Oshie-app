@@ -177,4 +177,16 @@ $(document).ready ->
       }
     ]
 
+  #======================
+  # Tour
+  #======================
+  # Instance the tour
+  tour = new Tour(steps: [
+    {
+
+    }
+  ])
+  # Initialize the tour
+  tour.init()
+
   return

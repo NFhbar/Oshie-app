@@ -1,0 +1,144 @@
+<% provide(:title, "Support") %>
+
+<div class="row wrapper border-bottom white-bg page-heading">
+  <div class="col-lg-10">
+    <h2>Help</h2>
+  </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <h2><span class="text-navy text-center bold">How can we help?</span>
+          </h2>
+          <div class="search-form">
+            <form action="#" method="get">
+              <div class="input-group">
+                <input type="text" placeholder="I need help with..." name="search" class="form-control input-lg">
+                <div class="input-group-btn">
+                  <button class="btn btn-lg btn-primary" type="submit">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content">
+          <h2 class="text-center"><span class="text-navy">Your Support Requests</span>
+          </h2>
+          <br>
+
+          <h4 class="text-center"><span class="font-normal">You have no open tickets</span></h4>
+          <br>
+
+          <div class="text-center">
+            <button class="btn btn-primary btn-md"><i class="fa fa-info-circle"></i> New Help Ticket</button>
+          </div>
+          <br>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="text-center"><span class="text-navy bold">New to Oshie?</span></h2>
+              <%= link_to "#" do %>
+                <h4 class="text-center"><span class="font-normal">Getting started</span></h4>
+              <% end %>
+              <%= link_to "#" do %>
+                <h4 class="text-center"><span class="font-normal">Documentation</span></h4>
+              <% end %>
+              <%= link_to "/forum/forums" do %>
+                <h4 class="text-center"><span class="font-normal">Visit our Forums</span></h4>
+              <% end %>
+                <a href="#" class="startTour"><h4 class="text-center">
+                  <span class="font-normal">Take the Tour</span></h4></a>
+            </div>
+
+            <div class="col-md-6">
+              <h2 class="text-center"><span class="text-navy bold">Common Issues</span></h2>
+              <%= link_to "#" do %>
+                <h4 class="text-center"><span class="font-normal">How to create a Class?</span></h4>
+              <% end %>
+              <%= link_to "#" do %>
+                <h4 class="text-center"><span class="font-normal">Understanding my Cognitive Stats</span></h4>
+              <% end %>
+              <%= link_to "#" do %>
+                <h4 class="text-center"><span class="font-normal">How do My Rewards work?</span></h4>
+              <% end %>
+              <%= link_to "#" do %>
+                <h4 class="text-center"><span class="font-normal">How to create an Evaluation?</span></h4>
+              <% end %>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="ibox float-e-margins">
+        <div class="ibox-content" >
+          <h2 class="text-center"><span class="text-navy">Contact Us</span></h2>
+          <br>
+          <h4 class="text-center"><span class="font-normal">Can't find your question? Send us an email!</span></h4>
+          <div class="text-center">
+            <br>
+            <button class="btn btn-primary btn-md"><i class="fa fa-envelope-o"></i> Email Us</button>
+          </div>
+          <br>
+
+          <div id="small-chat" >
+            <span class="badge badge-warning ">1</span>
+            <a class="open-small-chat">
+              <i class="fa fa-comments"></i>
+            </a>
+          </div>
+          <br>
+
+          <div class="small-chat-box fadeInRight animated">
+            <div class="heading" draggable="true">
+              <small class="chat-date pull-right">
+                02.19.2017
+              </small>
+              Help Chat
+            </div>
+            <div class="content">
+              <div class="left">
+                <div class="author-name">
+                  Jake <small class="chat-date">
+                  10:02 am
+                </small>
+                </div>
+                <div class="chat-message active">
+                  Hi <strong class="font-bold"><%= current_user.first_name%></strong>
+                  how can I help you?<br/>
+                </div>
+              </div>
+            </div>
+            <div class="form-chat">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control"> <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button">
+                    Send
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

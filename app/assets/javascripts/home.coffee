@@ -1,5 +1,14 @@
 $(document).ready ->
 
+  # Instance the tour
+  tour = new Tour(steps: [
+    {
+
+    }
+  ])
+  # Initialize the tour
+  tour.init()
+
   ### initialize the calendar
    -----------------------------------------------------------------
   ###

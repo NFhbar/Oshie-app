@@ -26,7 +26,7 @@
         </div>
       </li>
 
-      <!-- landing profile -->
+      <!-- Home profile -->
       <li class="<%= 'active' if current_page?('/home/minor') %>">
         <%= link_to "/home/minor" do %>
           <i class="fa fa-home"></i> <span class="nav-label">Home</span>
@@ -109,6 +109,22 @@
           <i class="fa fa-commenting-o"></i> <span class="nav-label">Forums</span>
         <% end %>
       </li>
+
+      <!-- Support -->
+      <li class="<%= 'active' if current_page?('/support/help') %>">
+        <%= link_to "/support/help" do %>
+          <i class="fa fa-info-circle"></i> <span class="nav-label">Support</span>
+        <% end %>
+      </li>
+
+      <!-- Landing -->
+      <li>
+        <%= link_to "/home" do %>
+          <i class="fa fa-star"></i> <span class="nav-label">Landing Page</span>
+        <% end %>
+      </li>
+
+
 
 
     </ul>

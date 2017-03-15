@@ -30,4 +30,6 @@ Rails.application.routes.draw do
 
   get    "rewards/myRewards",   to: 'rewards#my_rewards'
 
+  get    "support/help",        to: 'support#help'
+
 end

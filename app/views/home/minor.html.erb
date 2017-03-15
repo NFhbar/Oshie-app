@@ -1,4 +1,4 @@
-<div class="row  border-bottom white-bg dashboard-header">
+<div class="row  border-bottom white-bg dashboard-header"   id="step1">
     <div class="col-sm-3">
         <h2>Welcome <strong><%= current_user.first_name%></strong></h2>
         <small>You have 16 messages and 8 notifications.</small>
@@ -21,7 +21,7 @@
                   </a>
               </div>
           </div>
-          <div class="ibox-content ibox-heading">
+          <div class="ibox-content ibox-heading" id="step2" >
               <h3><i class="fa fa-envelope-o"></i> New messages</h3>
               <small><i class="fa fa-tim"></i> You have 16 new messages.</small>
           </div>
@@ -59,7 +59,7 @@
   </div>
 
   <div class="col-lg-4">
-      <div class="ibox float-e-margins">
+      <div class="ibox float-e-margins" id="step3">
           <div class="ibox-title">
               <h5>Notifications</h5>
               <div class="ibox-tools">
@@ -116,7 +116,7 @@
                   </a>
               </div>
           </div>
-          <div class="ibox-content ibox-heading">
+          <div class="ibox-content ibox-heading" id="step4">
               <h3><i class="fa fa-pencil-square-o"></i> My Classes</h3>
               <small><i class="fa fa-tim"></i> You have 3 active classes.</small>
           </div>
