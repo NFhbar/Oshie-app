@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get    '/policy/promise', to: 'policy#promise'
   get    '/policy/privacy', to: 'policy#privacy'
   get    '/policy/aup',     to: 'policy#acceptable'
+  get    '/policy/support', to: 'policy#support'
+  get    '/policy/terms',   to: 'policy#terms'
+  get    '/policy/security',to: 'policy#security'
 
   get    "home/index",         to: 'home#index'
   get    "home/minor",         to: 'home#minor'
