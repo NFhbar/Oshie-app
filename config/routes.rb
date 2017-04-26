@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get    '/policy/support', to: 'policy#support'
   get    '/policy/terms',   to: 'policy#terms'
   get    '/policy/security',to: 'policy#security'
+  get    '/policy/trademark', to: 'policy#trademark'
+  get    '/policy/dmca',    to: 'policy#dmca'
 
   get    "home/index",         to: 'home#index'
   get    "home/minor",         to: 'home#minor'
