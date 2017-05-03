@@ -25,7 +25,7 @@
           <li><%= link_to "Learn More",
           root_path(:anchor => "learn")%></li>
            <% if user_signed_in? %>
-              <li><%= link_to "Oshie Dashboard", home_index_path%></li>
+              <li><%= link_to "Oshie Dashboard", home_minor_path%></li>
               <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
             <% else %>
               <li><%= link_to "Log in", new_user_session_path %></li>
